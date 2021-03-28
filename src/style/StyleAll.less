@@ -1,0 +1,166 @@
+@block-background: red;
+body, h1, h2, h3, h4, h5, p, img, ul, li {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #e5e5e5;
+  box-sizing: border-box;
+}
+button:focus {
+  outline: none;
+}
+.ContainerAll {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background: white;
+}
+.SelectTitle {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+}
+.SelectBtn {
+  width: 44px;
+  height: 44px;
+  border: none;
+  background: none;
+}
+.SelectText {
+  .fontSize14;
+  opacity: .75;
+}
+//Forms
+.FormElementsSubscriptionPadding {
+  padding-left: 0;
+}
+.inputLittle {
+  width: 150px;
+  .inputAll;
+}
+.inputMiddle {
+  width: 266px;
+  .inputAll;
+}
+.inputLarge {
+  width: 320px;
+  .inputAll;
+}
+.inputBig {
+  .inputLarge;
+  margin-bottom: 20px;
+}
+.inputLargeMarginBottom {
+  margin-bottom: 20px;
+}
+.inputBigMarginBottom {
+  margin-bottom: 0;
+}
+input.inputHover:hover, input.inputHover:focus {
+  border: rgba(31,32,65,0.5) 1px solid;
+}
+input::placeholder {
+  .fontSize14;
+  opacity: .25;
+}
+.inputAll() {
+  height: 44px;
+  border: rgba(31,32,65,0.25) 1px solid;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding-left: 15px;
+}
+.DropdownContainer() {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-top: 7px;
+  padding-right: 7px;
+   box-sizing: border-box;
+  border: rgba(31,32,65,0.5) 1px solid;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.DropdownBorder {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.DropdownText {
+  width: 150px;
+  padding-top: 6px;
+}
+.DropdownBtn {
+  width: 30px;
+}
+.DropdownBtnCount {
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  border: rgba(31,32,65,0.5) 1px solid;
+  margin-bottom: 7px;
+  background: none;
+  align-items: center;
+  padding-top: 0.1px;
+}
+.DropdownCount {
+  width: 32px
+}
+.DropdownCountText {
+  .fontSize12;
+  margin-top: 8px;
+  margin-bottom: 22px;
+}
+.DropdownTextStyle {
+  .fontSize12;
+  margin-bottom: 22px;
+}
+.DropdownBtnPlusMn {
+  margin-top: 5px;
+}
+.DropdownBtnMinusMn {
+  margin-top: -15px;
+}
+/*Check list*/
+.custom-checkbox>input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.custom-checkbox+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.custom-checkbox>span {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.custom-checkbox>span::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: rgba(31,32,65,0.5) 1px solid;
+  border-radius: 4px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+.custom-checkbox>input:checked+span::before{
+  border-color: @colorPurle;
+  background-image: url("../assets/checkbox.png");
+}
+.CheckboxListBodyText {
+    .fontSize14;
+  opacity: .5;
+}
+
+
